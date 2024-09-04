@@ -1,0 +1,5 @@
+project,Techstack,links
+Ecommerce App,"Django, DRF, HTML, CSS, JavaScript, Bootstarp",http://example.com/ecommerce-app/
+Sales Insight,"SQL, Tableau",https://colab.research.google.com/drive/1XubprqqUPE4erxcoE4PO3B02eDYZ5W3x?usp=sharing
+Olympics 2024 Analysis,Power BI,https://drive.google.com/file/d/1CKsPlWasDXPhSsvtnMQSl-qqijN32Qda/view?usp=sharing
+Cold Email Generator,"Gen AI, Langchain, Streamlit, chromaDB, Groq ",http://example.com/cold-email-generator/
