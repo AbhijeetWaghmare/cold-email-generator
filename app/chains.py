@@ -1,19 +1,20 @@
-import os
+
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.exceptions import OutputParserException
-from dotenv import load_dotenv
 
-load_dotenv()
+import streamlit as st
 
 
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+MODEL = st.secrets["MODEL"]
 class Chain:
     def __init__(self):
         self.llm = ChatGroq(
-            model=os.getenv("MODEL"),
+            model=MODEL,
             temperature=0,
-            groq_api_key=os.getenv("GROQ_API_KEY"),
+            groq_api_key=GROQ_API_KEY,
         )
 
     def extract_jobs(self, cleaned_text):
