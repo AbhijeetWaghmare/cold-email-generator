@@ -16,7 +16,10 @@ def create_streamlit_app(llm ,portfolio):
     url_input = st.text_input("Enter URL: ", placeholder="Enter job description link ")
     submit_input = st.button("Submit")
 
-    
+    footer_html = """<div style='text-align: center;'>
+        <p>Developed with ❤️ by Abhijeet Waghmare</p>
+        </div>"""
+    st.markdown(footer_html, unsafe_allow_html=True)
 
     if submit_input:
         
