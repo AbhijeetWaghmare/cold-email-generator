@@ -1,5 +1,4 @@
 import streamlit as st
-import pyperclip
 from chains import Chain
 from portfolio import Portfolio
 from langchain_community.document_loaders import WebBaseLoader
